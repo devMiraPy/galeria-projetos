@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --azul-fundo: #10052f;
+  --azul-padrao: #22145f;
+  --destaque: #3d3fb3;
+  --contrates: #a8b5ff;
+  --preto: #080218;
+  --cor-texto-padrao: #f4f1ff;
+
+  --font-head: "Poppins", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-code: "JetBrains Mono", monospace;
+
+  --btn-radius: 3px;
+}
