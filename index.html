@@ -1,360 +1,567 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Minha Jornada — ADS 1º Semestre</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="img/favicon.ico" type="image/x-icon"/>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minha Jornada — ADS 1º Semestre</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+   <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+   <link rel="manifest" href="favicon_io/site.webmanifest">
+  </head>
+  <body>
+    <input type="checkbox" id="nav-check" class="nav-check" />
 
-  <input type="checkbox" id="nav-check" class="nav-check" />
-
-  <header class="site-header">
-    <div class="header-inner">
-      <a href="#hero" class="logo">
-        <span class="logo-bracket">// </span><span class="logo-text">N</span>
-      </a>
-      <nav class="main-nav" aria-label="Navegação principal">
-        <ul>
-          <li><a href="#hero"><span class="nav-comment"> &lt; </span>Início<span class="nav-comment"> /></span></a></li>
-          <li><a href="#sobre"><span class="nav-comment"> &lt; </span>Sobre<span class="nav-comment"> /></span></a></li>
-          <li><a href="#timeline"><span class="nav-comment"> &lt; </span>Timeline<span class="nav-comment"> /></span></a></li>
-          <li><a href="#evolucao"><span class="nav-comment"> &lt; </span>Evolução<span class="nav-comment"> /></span></a></li>
-          <li><a href="#contato"><span class="nav-comment"> &lt; </span>Contato<span class="nav-comment"> /></span></a></li>
-        </ul>
-      </nav>
-      <label for="nav-check" class="nav-toggle" aria-label="Abrir menu">
-        <span></span><span></span><span></span>
-      </label>
-    </div>
-  </header>
-
-  <main id="main">
-
-    <section id="hero" class="hero-section" aria-label="Apresentação">
-      <div class="hero-content">
-        <p class="hero-eyebrow">Análise e Desenvolvimento de Sistemas</p>
-        <h1 class="hero-title">
-          Minha<br />
-          <span class="hero-highlight">Jornada</span><br />
-          no 1º Semestre
-        </h1>
-        <p class="hero-subtitle">
-          12 aulas. 12 conquistas. Uma linha do tempo de quem chegou sem saber o que era HTML
-          e está entregando um projeto completo com responsividade e animações.
-        </p>
-        <a href="#timeline" class="btn-primary">ver a timeline →</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a href="#hero" class="logo">
+          <span class="logo-bracket">// </span
+          ><span class="logo-text">Nicolas Mira</span
+          ><span class="logo-bracket"> //</span>
+        </a>
+        <nav class="main-nav" aria-label="Navegação principal">
+          <ul>
+            <li>
+              <a href="#hero"
+                ><span class="nav-comment"> &lt; </span>Início<span
+                  class="nav-comment"
+                >
+                  /></span
+                ></a
+              >
+            </li>
+            <li>
+              <a href="#sobre"
+                ><span class="nav-comment"> &lt; </span>Sobre<span
+                  class="nav-comment"
+                >
+                  /></span
+                ></a
+              >
+            </li>
+            <li>
+              <a href="#timeline"
+                ><span class="nav-comment"> &lt; </span>Timeline<span
+                  class="nav-comment"
+                >
+                  /></span
+                ></a
+              >
+            </li>
+            <li>
+              <a href="#evolucao"
+                ><span class="nav-comment"> &lt; </span>Evolução<span
+                  class="nav-comment"
+                >
+                  /></span
+                ></a
+              >
+            </li>
+            <li>
+              <a href="#contato"
+                ><span class="nav-comment"> &lt; </span>Contato<span
+                  class="nav-comment"
+                >
+                  /></span
+                ></a
+              >
+            </li>
+          </ul>
+        </nav>
+        <label for="nav-check" class="nav-toggle" aria-label="Abrir menu">
+          <span></span><span></span><span></span>
+        </label>
       </div>
-      <div class="hero-decoration" aria-hidden="true">
-        <div class="deco-circle deco-1"></div>
-        <div class="deco-circle deco-2"></div>
-        <div class="deco-code">
-          <span>&lt;html&gt;</span>
-          <span>&nbsp;&nbsp;&lt;head&gt;…&lt;/head&gt;</span>
-          <span>&nbsp;&nbsp;&lt;body&gt;</span>
-          <span>&nbsp;&nbsp;&nbsp;&nbsp;&lt;section&gt;…</span>
-          <span>&nbsp;&nbsp;&lt;/body&gt;</span>
-          <span>&lt;/html&gt;</span>
-        </div>
-      </div>
-    </section>
+    </header>
 
-    <section id="sobre" class="sobre-section" aria-label="Sobre mim">
-      <div class="sobre-inner">
-        <div class="sobre-foto-wrap">
-          <div class="sobre-foto-ring">
-            <img src="img/link.jpg" alt="Foto de Nicolas Mira" class="sobre-foto" />
-          </div>
-          <div class="sobre-foto-deco" aria-hidden="true"></div>
-        </div>
-        <div class="sobre-content">
-          <p class="section-label">// sobre mim</p>
-          <h2 class="section-title sobre-titulo">Eu sou Nicolas Mira</h2>
-          <p class="sobre-bio">
-            Estudante de ADS no SENAI Morvan-Figueiredo, Sempre facinado por Tecnologia e inovação, mesmo que já tivesse contato com a área, ainda era algo meio distante da minha realidade, sempre tive a curiosidade de entender certamente como as coisas funcionavam, mesmo tentando estudar em casa a chave nunca virava, mas no SENAI essa chave virou, e hoje me sinto muito mais confiante, e com uma base sólida para seguir evoluindo cada vez mais.
-            
+    <main id="main">
+      <section id="hero" class="hero-section" aria-label="Apresentação">
+        <div class="hero-dot-grid" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="hero-eyebrow">Análise e Desenvolvimento de Sistemas</p>
+          <h1 class="hero-title">
+            Minha<br />
+            <span class="hero-highlight">Jornada</span><br />
+            no 1º Semestre
+          </h1>
+          <p class="hero-subtitle">
+          12 Primeiras aulas no curso técnico em ADS.
           </p>
-          <div class="skills-block">
-            <p class="skills-label">stack atual</p>
-            <div class="skill-row">
-              <span class="skill-name">HTML</span>
-              <div class="skill-bar">
-                <div class="skill-fill" style="--w: 88%"></div>
-              </div>
-              <span class="skill-pct">88%</span>
+          <a href="#timeline" class="btn-primary">ver a timeline →</a>
+        </div>
+        <div class="hero-decoration" aria-hidden="true">
+          <div class="deco-circle deco-1"></div>
+          <div class="deco-circle deco-2"></div>
+          <div class="deco-code">
+            <span>&lt;html&gt;</span>
+            <span>&nbsp;&nbsp;&lt;head&gt;…&lt;/head&gt;</span>
+            <span>&nbsp;&nbsp;&lt;body&gt;</span>
+            <span>&nbsp;&nbsp;&nbsp;&nbsp;&lt;section&gt;…</span>
+            <span>&nbsp;&nbsp;&lt;/body&gt;</span>
+            <span>&lt;/html&gt;</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="sobre" class="sobre-section" aria-label="Sobre mim">
+        <div class="sobre-inner">
+          <div class="sobre-foto-wrap">
+            <div class="sobre-foto-ring">
+              <img
+                src="img/link.jpg"
+                alt="Foto de Nicolas Mira"
+                class="sobre-foto"
+              />
             </div>
-            <div class="skill-row">
-              <span class="skill-name">CSS</span>
-              <div class="skill-bar">
-                <div class="skill-fill" style="--w: 80%"></div>
-              </div>
-              <span class="skill-pct">80%</span>
+            <div class="sobre-foto-deco" aria-hidden="true"></div>
+            <div class="sobre-badge" aria-hidden="true">
+              <span class="badge-dot"></span>
             </div>
-            <div class="skill-row">
-              <span class="skill-name">Responsivo</span>
-              <div class="skill-bar">
-                <div class="skill-fill" style="--w: 75%"></div>
+          </div>
+          <div class="sobre-content">
+            <p class="section-label">// sobre mim</p>
+            <h2 class="section-title sobre-titulo">Eu sou Nicolas Mira</h2>
+            <p class="sobre-bio">
+              Estudante de ADS no SENAI Morvan-Figueiredo, Sempre fascinado por
+              Tecnologia e inovação, mesmo que já tivesse contato com a área,
+              ainda era algo meio distante da minha realidade, sempre tive a
+              curiosidade de entender certamente como as coisas funcionavam,
+              mesmo tentando estudar em casa a chave nunca virava, mas no SENAI
+              essa chave virou, e hoje me sinto muito mais confiante, e com uma
+              base sólida para seguir evoluindo cada vez mais.
+            </p>
+            <div class="skills-block">
+              <p class="skills-label">stack atual</p>
+              <div class="skill-row">
+                <span class="skill-name">HTML</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="--w: 88%"></div>
+                </div>
+                <span class="skill-pct">88%</span>
               </div>
-              <span class="skill-pct">75%</span>
-            </div>
-            <div class="skill-row">
-              <span class="skill-name">Git</span>
-              <div class="skill-bar">
-                <div class="skill-fill" style="--w: 55%"></div>
+              <div class="skill-row">
+                <span class="skill-name">CSS</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="--w: 80%"></div>
+                </div>
+                <span class="skill-pct">80%</span>
               </div>
-              <span class="skill-pct">55%</span>
-            </div>
-            <div class="skill-row">
-              <span class="skill-name">JavaScript</span>
-              <div class="skill-bar">
-                <div class="skill-fill skill-fill--dim" style="--w: 10%"></div>
+              <div class="skill-row">
+                <span class="skill-name">Responsivo</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="--w: 75%"></div>
+                </div>
+                <span class="skill-pct">75%</span>
               </div>
-              <span class="skill-pct skill-pct--dim">em breve</span>
+              <div class="skill-row">
+                <span class="skill-name">Git</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="--w: 55%"></div>
+                </div>
+                <span class="skill-pct">55%</span>
+              </div>
+              <div class="skill-row">
+                <span class="skill-name">JavaScript</span>
+                <div class="skill-bar">
+                  <div
+                    class="skill-fill skill-fill--dim"
+                    style="--w: 10%"
+                  ></div>
+                </div>
+                <span class="skill-pct skill-pct--dim">em breve</span>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="timeline" class="timeline-section" aria-label="Timeline do semestre">
-      <div class="section-header">
-        <p class="section-label">// linha do tempo</p>
-        <h2 class="section-title">O Semestre em Código</h2>
-        <p class="section-desc">
-          Cada aula foi um commit. Aqui está o histórico do que aprendi.
-        </p>
-      </div>
-
-      <div class="timeline" role="list">
-
-        <article class="timeline-item" role="listitem">
-          <div class="timeline-dot"><span class="dot-number">01</span></div>
-          <div class="timeline-card">
-            <span class="card-tag">Fundamentos</span>
-            <h3>Introdução ao Desenvolvimento Web</h3>
-            <p>Primeiro contato com a web como plataforma de desenvolvimento. Entendi a diferença entre front-end e back-end, como funciona o protocolo HTTP e por que o navegador é o ambiente de execução do HTML, CSS e JavaScript.</p>
-          </div>
-        </article>
-
-        <article class="timeline-item" role="listitem">
-          <div class="timeline-dot"><span class="dot-number">02</span></div>
-          <div class="timeline-card">
-            <span class="card-tag">Estrutura</span>
-            <h3>HTML Básico</h3>
-            <p>Aprendi a anatomia de um documento HTML: tags, atributos, aninhamento e semântica. Conheci os elementos estruturais como <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code> e <code>&lt;footer&gt;</code>.</p>
-          </div>
-        </article>
-
-        <article class="timeline-item" role="listitem">
-          <div class="timeline-dot"><span class="dot-number">03</span></div>
-          <div class="timeline-card">
-            <span class="card-tag">Interação</span>
-            <h3>Formulários HTML</h3>
-            <p>Construí formulários acessíveis usando <code>&lt;input&gt;</code>, <code>&lt;label&gt;</code>, <code>&lt;select&gt;</code> e <code>&lt;textarea&gt;</code>. Entendi a importância dos atributos <code>type</code>, <code>name</code> e <code>required</code> para validação.</p>
-          </div>
-        </article>
-
-        <article class="timeline-item" role="listitem">
-          <div class="timeline-dot"><span class="dot-number">04</span></div>
-          <div class="timeline-card">
-            <span class="card-tag">Visual</span>
-            <h3>CSS Básico</h3>
-            <p>Primeiras estilizações: cores, fontes, backgrounds e bordas. Entendi a cascata, a especificidade dos seletores e como o CSS é aplicado ao DOM. Consegui dar vida visual às minhas páginas pela primeira vez.</p>
-          </div>
-        </article>
-
-        <article class="timeline-item" role="listitem">
-          <div class="timeline-dot"><span class="dot-number">05</span></div>
-          <div class="timeline-card">
-            <span class="card-tag">Layout</span>
-            <h3>Box Model</h3>
-            <p>Desmistifiquei o modelo de caixa do CSS: <code>content</code>, <code>padding</code>, <code>border</code> e <code>margin</code>. Aprendi a diferença entre <code>box-sizing: content-box</code> e <code>border-box</code>, o que mudou completamente meu controle de espaçamento.</p>
-          </div>
-        </article>
-
-        <article class="timeline-item" role="listitem">
-          <div class="timeline-dot"><span class="dot-number">06</span></div>
-          <div class="timeline-card">
-            <span class="card-tag">Layout</span>
-            <h3>Flexbox</h3>
-            <p>Flexbox virou minha ferramenta principal para alinhamentos. Aprendi os eixos principal e cruzado, e propriedades como <code>justify-content</code>, <code>align-items</code> e <code>flex-wrap</code>, resolvendo layouts que antes pareciam impossíveis.</p>
-          </div>
-        </article>
-
-        <article class="timeline-item" role="listitem">
-          <div class="timeline-dot"><span class="dot-number">07</span></div>
-          <div class="timeline-card">
-            <span class="card-tag">Layout</span>
-            <h3>Grid Layout</h3>
-            <p>Com Grid, passei a pensar em layouts bidimensionais. Aprendi a definir <code>grid-template-columns</code>, <code>grid-template-rows</code>, <code>gap</code> e posicionamento com <code>grid-area</code>, construindo estruturas de página completas com poucas linhas.</p>
-          </div>
-        </article>
-
-        <article class="timeline-item" role="listitem">
-          <div class="timeline-dot"><span class="dot-number">08</span></div>
-          <div class="timeline-card">
-            <span class="card-tag">Responsivo</span>
-            <h3>Responsividade</h3>
-            <p>Entendi o conceito de design responsivo: que a página deve se adaptar ao dispositivo do usuário. Aprendi sobre viewport, unidades relativas como <code>%</code>, <code>em</code>, <code>rem</code>, <code>vw</code> e <code>vh</code>, e a lógica mobile-first.</p>
-          </div>
-        </article>
-
-        <article class="timeline-item" role="listitem">
-          <div class="timeline-dot"><span class="dot-number">09</span></div>
-          <div class="timeline-card">
-            <span class="card-tag">Responsivo</span>
-            <h3>Media Queries</h3>
-            <p>Aprendi a usar <code>@media</code> para adaptar estilos a diferentes breakpoints. Implementei layouts distintos para desktop (acima de 1024px), tablet (768–1023px) e smartphone (até 767px), tornando minhas páginas funcionais em qualquer tela.</p>
-          </div>
-        </article>
-
-        <article class="timeline-item" role="listitem">
-          <div class="timeline-dot"><span class="dot-number">10</span></div>
-          <div class="timeline-card">
-            <span class="card-tag">Animação</span>
-            <h3>Animações CSS</h3>
-            <p>Descobri o poder das <code>transition</code> e <code>animation</code> no CSS. Aprendi a criar micro-interações em hover, controlar duração, atraso e <code>timing-function</code>, dando feedback visual ao usuário sem uma linha de JavaScript.</p>
-          </div>
-        </article>
-
-        <article class="timeline-item" role="listitem">
-          <div class="timeline-dot"><span class="dot-number">11</span></div>
-          <div class="timeline-card">
-            <span class="card-tag">Animação</span>
-            <h3>Keyframes</h3>
-            <p>Com <code>@keyframes</code>, passei a criar animações complexas com múltiplos estados. Aprendi a definir <code>from/to</code> e percentuais intermediários, criando efeitos como fade-in, slide, pulse e bounce — como os que estão nesta própria página.</p>
-          </div>
-        </article>
-
-        <article class="timeline-item" role="listitem">
-          <div class="timeline-dot"><span class="dot-number">12</span></div>
-          <div class="timeline-card card-final">
-            <span class="card-tag tag-final">Projeto</span>
-            <h3>Projeto Integrador</h3>
-            <p>A aula que fecha o ciclo. Reunindo tudo: HTML semântico, CSS avançado, responsividade, keyframes e boas práticas. O resultado é esta página — publicada no GitHub Pages e representando a jornada completa do semestre.</p>
-          </div>
-        </article>
-
-      </div>
-    </section>
-
-    <section id="evolucao" class="evolucao-section" aria-label="Minha Evolução">
-      <div class="section-header">
-        <p class="section-label">// minha evolução</p>
-        <h2 class="section-title">De Zero ao Projeto</h2>
-      </div>
-
-      <div class="evolucao-grid">
-
-        <article class="evolucao-card card-antes">
-          <div class="evo-icon" aria-hidden="true"></div>
-          <h3> Meu início no curso </h3>
-          <div class="evo-content">
-            <p>Quando comecei o curso ja tinha uma ideia do que ia estudar, já havia feito alguns projetos escolares que envolviam html e css, mas mesmo com essas experiencias o conhecimento era raso, e sentia muita dificuldade de enteder alguns conceitos sobre programação, mas estudando no senai consegui moldar muito melhor meus conceitos da programação./p>
-            <ul class="evo-list">
-              <li>  Pouco contato com sistemas</li>
-              <li>  Não sabia estruturar html e css</li>
-              <li>  Não entendia conceitos de back e front end</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="evolucao-card card-agora">
-          <div class="evo-icon" aria-hidden="true">🚀</div>
-          <h3>Quem eu sou agora</h3>
-          <div class="evo-content">
-            <p>Hoje consigo estruturar uma página completa do zero, com HTML semântico e organizado. Sei a diferença entre cada elemento, como tornar uma página acessível com atributos ARIA, e por que semântica importa para SEO e leitores de tela.</p>
-            <p>No CSS, passei de "não sei como centralizar uma div" para criar layouts complexos com Flexbox e Grid, animações com <code>@keyframes</code>, variáveis CSS e interfaces responsivas.</p>
-            <ul class="evo-list">
-              <li>✦ HTML semântico com boas práticas de acessibilidade</li>
-              <li>✦ CSS avançado: Flexbox, Grid, animações, variáveis</li>
-              <li>✦ Layouts responsivos com Media Queries</li>
-              <li>✦ Git e GitHub Pages para versionamento e deploy</li>
-              <li>✦ Projeto integrador completo publicado online</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="evolucao-card card-futuro">
-          <div class="evo-icon" aria-hidden="true">🎯</div>
-          <h3>Meu próximo objetivo</h3>
-          <div class="evo-content">
-            <p>Entrar no mundo do JavaScript. Quero entender a lógica de programação de forma mais profunda — manipulação do DOM, eventos, funções, APIs e assincronismo.</p>
-            <p>Também pretendo explorar um pouco de Python já que é uma linguagem de programação com muitas portas hoje no mercado de trabalho.</p>
-            <ul class="evo-list">
-              <li>✦ Aprender JavaScript e lógica de programação</li>
-              <li>✦ Explorar React no próximo semestre</li>
-              <li>✦ Construir um portfólio com projetos reais</li>
-              <li>  Explorar melhor a área de back-end</li>
-            </ul>
-          </div>
-        </article>
-
-      </div>
-    </section>
-
-  </main>
-
-  <footer id="contato" class="site-footer">
-    <div class="footer-inner">
-
-      <div class="footer-top">
-        <div class="footer-brand">
-          <span class="footer-logo"><span class="logo-bracket">//</span> Nicolas Mira <span class="logo-bracket">//</span></span>
-          <p>ADS — 1º Semestre · 2026</p>
+      <section
+        id="timeline"
+        class="timeline-section"
+        aria-label="Timeline do semestre"
+      >
+        <div class="timeline-bg" aria-hidden="true">
+          <span class="tbg-el tbg-1">&lt;html&gt;</span>
+          <span class="tbg-el tbg-2">&lt;/div&gt;</span>
+          <span class="tbg-el tbg-3">color: #a8b5ff;</span>
+          <span class="tbg-el tbg-4">&lt;section&gt;</span>
+          <span class="tbg-el tbg-5">display: flex;</span>
+          <span class="tbg-el tbg-6">&lt;/body&gt;</span>
+          <span class="tbg-el tbg-7">margin: 0 auto;</span>
+          <span class="tbg-el tbg-8">&lt;header&gt;</span>
+          <span class="tbg-el tbg-9">@keyframes {}</span>
+          <span class="tbg-el tbg-10">&lt;/html&gt;</span>
+          <span class="tbg-el tbg-11">border-radius: 8px;</span>
+          <span class="tbg-el tbg-12">&lt;main&gt;</span>
+          <span class="tbg-el tbg-13">grid-template-columns:</span>
+          <span class="tbg-el tbg-14">&lt;/section&gt;</span>
+          <span class="tbg-el tbg-15">font-family: inherit;</span>
         </div>
 
-        <div class="footer-contato-wrap">
-          <p class="section-label footer-label">// contato</p>
-          <h2 class="footer-titulo">Bora conversar?</h2>
-          <p class="footer-desc">Manda uma mensagem, respondo em breve.</p>
+        <div class="section-header">
+          <p class="section-label">// linha do tempo</p>
+          <h2 class="section-title">O Semestre em Código</h2>
+          <p class="section-desc"></p>
+        </div>
 
-          <form class="contato-form" action="#" method="post">
-            <div class="form-row">
+        <div class="timeline" role="list">
+          <article class="timeline-item" role="listitem">
+            <div class="timeline-dot"><span class="dot-number">01</span></div>
+            <div class="timeline-card">
+              <span class="card-tag">Hardware</span>
+              <h3>Descobrindo o Computador</h3>
+              <p>
+                Primeiro mergulho na anatomia de uma máquina: processador,
+                memória RAM, armazenamento e periféricos. Entendi como o
+                hardware e o software se comunicam e por que essa base é
+                essencial para qualquer profissional de tecnologia.
+              </p>
+            </div>
+          </article>
+          <article class="timeline-item" role="listitem">
+            <div class="timeline-dot"><span class="dot-number">02</span></div>
+            <div class="timeline-card">
+              <span class="card-tag">Sistemas</span>
+              <h3>Explorando Sistemas Operacionais</h3>
+              <p>
+                Conheci as diferenças entre Windows, Linux e macOS —
+                gerenciamento de processos, sistema de arquivos e permissões.
+                Aprendi a usar o terminal como ferramenta de produtividade, não
+                só como tela preta intimidadora.
+              </p>
+            </div>
+          </article>
+          <article class="timeline-item" role="listitem">
+            <div class="timeline-dot"><span class="dot-number">03</span></div>
+            <div class="timeline-card">
+              <span class="card-tag">Gestão</span>
+              <h3>Metodologias Ágeis</h3>
+              <p>
+                Entendi a diferença entre Scrum e Kanban, o conceito de sprints,
+                backlogs e daily meetings. Percebi que desenvolver software é
+                tanto sobre pessoas e processos quanto sobre código — e que
+                trabalhar em ciclos curtos entrega mais valor.
+              </p>
+            </div>
+          </article>
+          <article class="timeline-item" role="listitem">
+            <div class="timeline-dot"><span class="dot-number">04</span></div>
+            <div class="timeline-card">
+              <span class="card-tag">Identidade</span>
+              <h3>Tipografia, Slogan e Arquétipo</h3>
+              <p>
+                Aprendi que uma marca vai muito além de um logo: ela tem voz,
+                personalidade e propósito. Estudei hierarquia tipográfica, como
+                construir um slogan que comunica valor e como os arquétipos de
+                Jung se aplicam ao branding moderno.
+              </p>
+            </div>
+          </article>
+          <article class="timeline-item" role="listitem">
+            <div class="timeline-dot"><span class="dot-number">05</span></div>
+            <div class="timeline-card">
+              <span class="card-tag">Design</span>
+              <h3>Prototipagem e Figma</h3>
+              <p>
+                Primeiro contato com o Figma: frames, componentes, auto-layout e
+                prototipagem interativa. Aprendi a validar uma ideia visualmente
+                antes de escrever uma linha de código — economizando tempo e
+                retrabalho no desenvolvimento.
+              </p>
+            </div>
+          </article>
+          <article class="timeline-item" role="listitem">
+            <div class="timeline-dot"><span class="dot-number">06</span></div>
+            <div class="timeline-card">
+              <span class="card-tag">Experiência</span>
+              <h3>Design UX e UI</h3>
+              <p>
+                Entendi a diferença entre UX (experiência do usuário) e UI
+                (interface visual). Estudei heurísticas de Nielsen, fluxos de
+                usuário, contraste de acessibilidade e como cada decisão visual
+                impacta a usabilidade de um produto.
+              </p>
+            </div>
+          </article>
+          <article class="timeline-item" role="listitem">
+            <div class="timeline-dot"><span class="dot-number">07</span></div>
+            <div class="timeline-card">
+              <span class="card-tag">Estrutura</span>
+              <h3>Primeira Página HTML</h3>
+              <p>
+                O momento em que o navegador abriu meu arquivo pela primeira
+                vez. Aprendi a anatomia do documento:
+                <code>&lt;!DOCTYPE&gt;</code>, <code>&lt;head&gt;</code>,
+                <code>&lt;body&gt;</code>, tags semânticas e atributos. Ver
+                "Olá, mundo" na tela mudou tudo.
+              </p>
+            </div>
+          </article>
+          <article class="timeline-item" role="listitem">
+            <div class="timeline-dot"><span class="dot-number">08</span></div>
+            <div class="timeline-card">
+              <span class="card-tag">Visual</span>
+              <h3>Primeira Aula de CSS</h3>
+              <p>
+                Entendi a cascata, especificidade de seletores e o Box Model.
+                Cores, fontes, espaçamentos — pela primeira vez uma página saiu
+                do HTML puro e ganhou personalidade visual. Percebi que CSS é
+                uma linguagem de design tanto quanto de código.
+              </p>
+            </div>
+          </article>
+          <article class="timeline-item" role="listitem">
+            <div class="timeline-dot"><span class="dot-number">09</span></div>
+            <div class="timeline-card">
+              <span class="card-tag">Versionamento</span>
+              <h3>Git e GitHub</h3>
+              <p>
+                Aprendi os comandos essenciais: <code>git init</code>,
+                <code>add</code>, <code>commit</code>, <code>push</code> e
+                <code>pull</code>. Entendi o conceito de branches e merges.
+                Publicar meu primeiro repositório no GitHub foi como lançar meu
+                cartão de visitas para o mundo.
+              </p>
+            </div>
+          </article>
+          <article class="timeline-item" role="listitem">
+            <div class="timeline-dot"><span class="dot-number">10</span></div>
+            <div class="timeline-card">
+              <span class="card-tag">Equipe</span>
+              <h3>Primeiro Projeto em Equipe</h3>
+              <p>
+                Trabalhar com mais pessoas no mesmo repositório trouxe desafios
+                reais: conflitos de merge, pull requests e code review. Aprendi
+                que colaborar em código exige tanto comunicação quanto
+                habilidade técnica — e que o GitHub é o palco disso tudo.
+              </p>
+            </div>
+          </article>
+          <article class="timeline-item" role="listitem">
+            <div class="timeline-dot"><span class="dot-number">11</span></div>
+            <div class="timeline-card">
+              <span class="card-tag">Animação</span>
+              <h3>Aula de Keyframes</h3>
+              <p>
+                Com <code>@keyframes</code> passei a criar animações com
+                múltiplos estados — <code>from/to</code> e percentuais
+                intermediários. Fade-in, slide, pulse, bounce: tudo sem
+                JavaScript. Foi a aula que transformou páginas estáticas em
+                experiências vivas.
+              </p>
+            </div>
+          </article>
+          <article class="timeline-item" role="listitem">
+            <div class="timeline-dot"><span class="dot-number">12</span></div>
+            <div class="timeline-card card-final">
+              <span class="card-tag tag-final">Projeto</span>
+              <h3>Media Queries e Projeto Final</h3>
+              <p>
+                A aula que fecha o ciclo. Aprendi a adaptar layouts com
+                <code>@media</code> para desktop, tablet e mobile. O resultado é
+                esta página — responsiva, animada, versionada no GitHub e
+                representando tudo que conquistei no primeiro semestre.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section
+        id="evolucao"
+        class="evolucao-section"
+        aria-label="Minha Evolução"
+      >
+        <div class="section-header">
+          <p class="section-label">// minha evolução</p>
+          <h2 class="section-title">De Zero ao Projeto</h2>
+        </div>
+        <div class="evolucao-grid">
+          <article class="evolucao-card card-antes">
+ 
+            <h3>Meu início no curso</h3>
+            <div class="evo-content">
+              <p>
+                Quando comecei o curso ja tinha uma ideia do que ia estudar, já
+                havia feito alguns projetos escolares que envolviam html e css,
+                mas mesmo com essas experiencias o conhecimento era raso, e
+                sentia muita dificuldade de enteder alguns conceitos sobre
+                programação.<br> <br> Mas estudando no senai consegui moldar muito melhor
+                meus conceitos da programação. </p>
+              </p>
+              <ul class="evo-list">
+                <li>Pouco contato com sistemas</li>
+                <li>Não sabia estruturar html e css</li>
+                <li>Não entendia conceitos de back e front end</li>
+              </ul>
+            </div>
+          </article>
+          <article class="evolucao-card card-agora">
+            <h3>Como estou agora</h3>
+            <div class="evo-content">
+              <p>
+                Hoje consigo estruturar uma página completa do zero, com HTML
+                semântico e organizado. Sei a diferença entre cada elemento,
+                como tornar uma página acessível com atributos ARIA, e por que
+                semântica importa para SEO e leitores de tela.
+              </p>
+              <p>
+                No CSS, passei de "não sei como centralizar uma div" para criar
+                layouts complexos com Flexbox e Grid, animações com
+                <code>@keyframes</code>, variáveis CSS e interfaces responsivas.
+              </p>
+              <ul class="evo-list">
+                <li> HTML semântico com boas práticas de acessibilidade</li>
+                <li> CSS avançado: Flexbox, Grid, animações, variáveis</li>
+                <li> Layouts responsivos com Media Queries</li>
+                <li> Git e GitHub Pages para versionamento e deploy</li>
+                <li> Projeto integrador completo publicado online</li>
+              </ul>
+            </div>
+          </article>
+          <article class="evolucao-card card-futuro">
+            <h3>Meu próximo objetivo</h3>
+            <div class="evo-content">
+              <p>
+                Entrar no mundo do JavaScript. Quero entender a lógica de
+                programação de forma mais profunda — manipulação do DOM,
+                eventos, funções, APIs e assincronismo.
+              </p>
+              <p>
+               Espero também estudar Python para garantir uma base sólida em lógica de programação, além de que Python é uma linguagem versátil e muito requisitada no mercado, o que pode abrir portas para diversas oportunidades. A longo prazo, essa base em Python pode facilitar a transição para outras linguagens e áreas, como desenvolvimento web, ciência de dados ou automação, ampliando ainda mais minhas possibilidades de carreira.
+              </p>
+              <ul class="evo-list">
+                <li> Aprender JavaScript e lógica de programação</li>
+                <li> Estudar Python e Moldar uma base sólida</li>
+                <li> Construir um portfólio com projetos reais</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contato" class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <span class="footer-logo"
+              ><span class="logo-bracket">//</span> Nicolas Mira
+              <span class="logo-bracket">//</span></span
+            >
+            <p>ADS — 1º Semestre · 2026</p>
+          </div>
+          <div class="footer-contato-wrap">
+            <p class="section-label footer-label">// contato</p>
+            <h2 class="footer-titulo">Bora conversar?</h2>
+            <p class="footer-desc">Manda uma mensagem, respondo em breve.</p>
+            <form class="contato-form" action="#" method="post">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="nome">nome</label>
+                  <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    placeholder="Seu nome"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email">e-mail</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="seu@email.com"
+                    required
+                  />
+                </div>
+              </div>
               <div class="form-group">
-                <label for="nome">nome</label>
-                <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
+                <label for="mensagem">mensagem</label>
+                <textarea
+                  id="mensagem"
+                  name="mensagem"
+                  rows="4"
+                  placeholder="Olá, Nicolas!..."
+                  required
+                ></textarea>
               </div>
-              <div class="form-group">
-                <label for="email">e-mail</label>
-                <input type="email" id="email" name="email" placeholder="seu@email.com" required />
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="mensagem">mensagem</label>
-              <textarea id="mensagem" name="mensagem" rows="4" placeholder="Olá, Nicolas!..." required></textarea>
-            </div>
-            <button type="submit" class="btn-primary btn-form">enviar mensagem →</button>
-          </form>
+              <button type="submit" class="btn-primary btn-form">
+                enviar mensagem →
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-links">
+            <a
+              href="https://github.com/nicolasmira"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer-link"
+            >
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.34-3.369-1.34-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.934.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"
+                />
+              </svg>
+              GitHub
+            </a>
+            <a
+              href="https://linkedin.com/in/nicolasmira"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer-link"
+            >
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                />
+              </svg>
+              LinkedIn
+            </a>
+            <a href="mailto:nicolas@email.com" class="footer-link">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                aria-hidden="true"
+              >
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+                <path d="m22 7-10 7L2 7" />
+              </svg>
+              nicolas@email.com
+            </a>
+          </div>
+          <p class="footer-copy">
+            &copy; 2026 Nicolas Mira. Todos os direitos reservados.
+          </p>
         </div>
       </div>
-
-      <div class="footer-bottom">
-        <div class="footer-links">
-          <a href="https://github.com/devMiraPy" target="_blank" rel="noopener noreferrer" class="footer-link">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.34-3.369-1.34-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.934.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
-            </svg>
-            GitHub
-          </a>
-          <a href="mailto:nicolas.mira@edu.senai.br" class="footer-link">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-              <rect x="2" y="4" width="20" height="16" rx="2"/>
-              <path d="m22 7-10 7L2 7"/>
-            </svg>
-            nicolas.mira@edu.senai.br 
-          </a>
-        </div>
-        <p class="footer-copy">&copy; 2026 Nicolas Mira. Todos os direitos reservados.</p>
-      </div>
-
-    </div>
-  </footer>
-
-</body>
+    </footer>
+  </body>
 </html>
