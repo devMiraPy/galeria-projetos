@@ -11,13 +11,28 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-   <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
-   <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
-   <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
-   <link rel="manifest" href="favicon_io/site.webmanifest">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon_io/site.webmanifest" />
   </head>
   <body>
     <input type="checkbox" id="nav-check" class="nav-check" />
+    <input type="checkbox" id="theme-check" class="theme-check" />
 
     <header class="site-header">
       <div class="header-inner">
@@ -75,9 +90,55 @@
             </li>
           </ul>
         </nav>
-        <label for="nav-check" class="nav-toggle" aria-label="Abrir menu">
-          <span></span><span></span><span></span>
-        </label>
+        <div class="header-actions">
+          <label
+            for="theme-check"
+            class="theme-toggle"
+            aria-label="Alternar tema"
+          >
+            <span class="theme-icon theme-icon--sun">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <circle cx="12" cy="12" r="5" />
+                <line x1="12" y1="1" x2="12" y2="3" />
+                <line x1="12" y1="21" x2="12" y2="23" />
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                <line x1="1" y1="12" x2="3" y2="12" />
+                <line x1="21" y1="12" x2="23" y2="12" />
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+              </svg>
+            </span>
+            <span class="theme-icon theme-icon--moon">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+              </svg>
+            </span>
+          </label>
+          <label for="nav-check" class="nav-toggle" aria-label="Abrir menu">
+            <span></span><span></span><span></span>
+          </label>
+        </div>
       </div>
     </header>
 
@@ -92,7 +153,8 @@
             no 1º Semestre
           </h1>
           <p class="hero-subtitle">
-          12 Primeiras aulas no curso técnico em ADS.
+            12 Principais Aprendizados, Projetos e Desafios que Marcaram Minha
+            Evolução como Desenvolvedor Web.
           </p>
           <a href="#timeline" class="btn-primary">ver a timeline →</a>
         </div>
@@ -211,166 +273,187 @@
           <p class="section-desc"></p>
         </div>
 
-        <div class="timeline" role="list">
-          <article class="timeline-item" role="listitem">
-            <div class="timeline-dot"><span class="dot-number">01</span></div>
-            <div class="timeline-card">
-              <span class="card-tag">Hardware</span>
-              <h3>Descobrindo o Computador</h3>
-              <p>
-                Primeiro mergulho na anatomia de uma máquina: processador,
-                memória RAM, armazenamento e periféricos. Entendi como o
-                hardware e o software se comunicam e por que essa base é
-                essencial para qualquer profissional de tecnologia.
-              </p>
-            </div>
-          </article>
-          <article class="timeline-item" role="listitem">
-            <div class="timeline-dot"><span class="dot-number">02</span></div>
-            <div class="timeline-card">
-              <span class="card-tag">Sistemas</span>
-              <h3>Explorando Sistemas Operacionais</h3>
-              <p>
-                Conheci as diferenças entre Windows, Linux e macOS —
-                gerenciamento de processos, sistema de arquivos e permissões.
-                Aprendi a usar o terminal como ferramenta de produtividade, não
-                só como tela preta intimidadora.
-              </p>
-            </div>
-          </article>
-          <article class="timeline-item" role="listitem">
-            <div class="timeline-dot"><span class="dot-number">03</span></div>
-            <div class="timeline-card">
-              <span class="card-tag">Gestão</span>
-              <h3>Metodologias Ágeis</h3>
-              <p>
-                Entendi a diferença entre Scrum e Kanban, o conceito de sprints,
-                backlogs e daily meetings. Percebi que desenvolver software é
-                tanto sobre pessoas e processos quanto sobre código — e que
-                trabalhar em ciclos curtos entrega mais valor.
-              </p>
-            </div>
-          </article>
-          <article class="timeline-item" role="listitem">
-            <div class="timeline-dot"><span class="dot-number">04</span></div>
-            <div class="timeline-card">
-              <span class="card-tag">Identidade</span>
-              <h3>Tipografia, Slogan e Arquétipo</h3>
-              <p>
-                Aprendi que uma marca vai muito além de um logo: ela tem voz,
-                personalidade e propósito. Estudei hierarquia tipográfica, como
-                construir um slogan que comunica valor e como os arquétipos de
-                Jung se aplicam ao branding moderno.
-              </p>
-            </div>
-          </article>
-          <article class="timeline-item" role="listitem">
-            <div class="timeline-dot"><span class="dot-number">05</span></div>
-            <div class="timeline-card">
-              <span class="card-tag">Design</span>
-              <h3>Prototipagem e Figma</h3>
-              <p>
-                Primeiro contato com o Figma: frames, componentes, auto-layout e
-                prototipagem interativa. Aprendi a validar uma ideia visualmente
-                antes de escrever uma linha de código — economizando tempo e
-                retrabalho no desenvolvimento.
-              </p>
-            </div>
-          </article>
-          <article class="timeline-item" role="listitem">
-            <div class="timeline-dot"><span class="dot-number">06</span></div>
-            <div class="timeline-card">
-              <span class="card-tag">Experiência</span>
-              <h3>Design UX e UI</h3>
-              <p>
-                Entendi a diferença entre UX (experiência do usuário) e UI
-                (interface visual). Estudei heurísticas de Nielsen, fluxos de
-                usuário, contraste de acessibilidade e como cada decisão visual
-                impacta a usabilidade de um produto.
-              </p>
-            </div>
-          </article>
-          <article class="timeline-item" role="listitem">
-            <div class="timeline-dot"><span class="dot-number">07</span></div>
-            <div class="timeline-card">
-              <span class="card-tag">Estrutura</span>
-              <h3>Primeira Página HTML</h3>
-              <p>
-                O momento em que o navegador abriu meu arquivo pela primeira
-                vez. Aprendi a anatomia do documento:
-                <code>&lt;!DOCTYPE&gt;</code>, <code>&lt;head&gt;</code>,
-                <code>&lt;body&gt;</code>, tags semânticas e atributos. Ver
-                "Olá, mundo" na tela mudou tudo.
-              </p>
-            </div>
-          </article>
-          <article class="timeline-item" role="listitem">
-            <div class="timeline-dot"><span class="dot-number">08</span></div>
-            <div class="timeline-card">
-              <span class="card-tag">Visual</span>
-              <h3>Primeira Aula de CSS</h3>
-              <p>
-                Entendi a cascata, especificidade de seletores e o Box Model.
-                Cores, fontes, espaçamentos — pela primeira vez uma página saiu
-                do HTML puro e ganhou personalidade visual. Percebi que CSS é
-                uma linguagem de design tanto quanto de código.
-              </p>
-            </div>
-          </article>
-          <article class="timeline-item" role="listitem">
-            <div class="timeline-dot"><span class="dot-number">09</span></div>
-            <div class="timeline-card">
-              <span class="card-tag">Versionamento</span>
-              <h3>Git e GitHub</h3>
-              <p>
-                Aprendi os comandos essenciais: <code>git init</code>,
-                <code>add</code>, <code>commit</code>, <code>push</code> e
-                <code>pull</code>. Entendi o conceito de branches e merges.
-                Publicar meu primeiro repositório no GitHub foi como lançar meu
-                cartão de visitas para o mundo.
-              </p>
-            </div>
-          </article>
-          <article class="timeline-item" role="listitem">
-            <div class="timeline-dot"><span class="dot-number">10</span></div>
-            <div class="timeline-card">
-              <span class="card-tag">Equipe</span>
-              <h3>Primeiro Projeto em Equipe</h3>
-              <p>
-                Trabalhar com mais pessoas no mesmo repositório trouxe desafios
-                reais: conflitos de merge, pull requests e code review. Aprendi
-                que colaborar em código exige tanto comunicação quanto
-                habilidade técnica — e que o GitHub é o palco disso tudo.
-              </p>
-            </div>
-          </article>
-          <article class="timeline-item" role="listitem">
-            <div class="timeline-dot"><span class="dot-number">11</span></div>
-            <div class="timeline-card">
-              <span class="card-tag">Animação</span>
-              <h3>Aula de Keyframes</h3>
-              <p>
-                Com <code>@keyframes</code> passei a criar animações com
-                múltiplos estados — <code>from/to</code> e percentuais
-                intermediários. Fade-in, slide, pulse, bounce: tudo sem
-                JavaScript. Foi a aula que transformou páginas estáticas em
-                experiências vivas.
-              </p>
-            </div>
-          </article>
-          <article class="timeline-item" role="listitem">
-            <div class="timeline-dot"><span class="dot-number">12</span></div>
-            <div class="timeline-card card-final">
-              <span class="card-tag tag-final">Projeto</span>
-              <h3>Media Queries e Projeto Final</h3>
-              <p>
-                A aula que fecha o ciclo. Aprendi a adaptar layouts com
-                <code>@media</code> para desktop, tablet e mobile. O resultado é
-                esta página — responsiva, animada, versionada no GitHub e
-                representando tudo que conquistei no primeiro semestre.
-              </p>
-            </div>
-          </article>
+        <div class="timeline-scroll-wrapper">
+          <div class="timeline-scroll-hint" aria-hidden="true">
+            <span>role para ver mais</span>
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M12 5v14M5 12l7 7 7-7" />
+            </svg>
+          </div>
+
+          <a href="#evolucao" class="timeline-skip">pular para o fim →</a>
+
+          <div class="timeline" role="list">
+            <article class="timeline-item" role="listitem">
+              <div class="timeline-dot"><span class="dot-number">01</span></div>
+              <div class="timeline-card">
+                <span class="card-tag">Hardware</span>
+                <h3>Descobrindo o Computador</h3>
+                <p>
+                  Primeiro mergulho na anatomia de uma máquina: processador,
+                  memória RAM, armazenamento e periféricos. Entendi como o
+                  hardware e o software se comunicam e por que essa base é
+                  essencial para qualquer profissional de tecnologia.
+                </p>
+              </div>
+            </article>
+            <article class="timeline-item" role="listitem">
+              <div class="timeline-dot"><span class="dot-number">02</span></div>
+              <div class="timeline-card">
+                <span class="card-tag">Sistemas</span>
+                <h3>Explorando Sistemas Operacionais</h3>
+                <p>
+                  Conheci as diferenças entre Windows, Linux e macOS —
+                  gerenciamento de processos, sistema de arquivos e permissões.
+                  Aprendi a usar o terminal como ferramenta de produtividade,
+                  não só como tela preta intimidadora.
+                </p>
+              </div>
+            </article>
+            <article class="timeline-item" role="listitem">
+              <div class="timeline-dot"><span class="dot-number">03</span></div>
+              <div class="timeline-card">
+                <span class="card-tag">Gestão</span>
+                <h3>Metodologias Ágeis</h3>
+                <p>
+                  Entendi a diferença entre Scrum e Kanban, o conceito de
+                  sprints, backlogs e daily meetings. Percebi que desenvolver
+                  software é tanto sobre pessoas e processos quanto sobre código
+                  — e que trabalhar em ciclos curtos entrega mais valor.
+                </p>
+              </div>
+            </article>
+            <article class="timeline-item" role="listitem">
+              <div class="timeline-dot"><span class="dot-number">04</span></div>
+              <div class="timeline-card">
+                <span class="card-tag">Identidade</span>
+                <h3>Tipografia, Slogan e Arquétipo</h3>
+                <p>
+                  Aprendi que uma marca vai muito além de um logo: ela tem voz,
+                  personalidade e propósito. Estudei hierarquia tipográfica,
+                  como construir um slogan que comunica valor e como os
+                  arquétipos de Jung se aplicam ao branding moderno.
+                </p>
+              </div>
+            </article>
+            <article class="timeline-item" role="listitem">
+              <div class="timeline-dot"><span class="dot-number">05</span></div>
+              <div class="timeline-card">
+                <span class="card-tag">Design</span>
+                <h3>Prototipagem e Figma</h3>
+                <p>
+                  Primeiro contato com o Figma: frames, componentes, auto-layout
+                  e prototipagem interativa. Aprendi a validar uma ideia
+                  visualmente antes de escrever uma linha de código —
+                  economizando tempo e retrabalho no desenvolvimento.
+                </p>
+              </div>
+            </article>
+            <article class="timeline-item" role="listitem">
+              <div class="timeline-dot"><span class="dot-number">06</span></div>
+              <div class="timeline-card">
+                <span class="card-tag">Experiência</span>
+                <h3>Design UX e UI</h3>
+                <p>
+                  Entendi a diferença entre UX (experiência do usuário) e UI
+                  (interface visual). Estudei heurísticas de Nielsen, fluxos de
+                  usuário, contraste de acessibilidade e como cada decisão
+                  visual impacta a usabilidade de um produto.
+                </p>
+              </div>
+            </article>
+            <article class="timeline-item" role="listitem">
+              <div class="timeline-dot"><span class="dot-number">07</span></div>
+              <div class="timeline-card">
+                <span class="card-tag">Estrutura</span>
+                <h3>Primeira Página HTML</h3>
+                <p>
+                  O momento em que o navegador abriu meu arquivo pela primeira
+                  vez. Aprendi a anatomia do documento:
+                  <code>&lt;!DOCTYPE&gt;</code>, <code>&lt;head&gt;</code>,
+                  <code>&lt;body&gt;</code>, tags semânticas e atributos. Ver
+                  "Olá, mundo" na tela mudou tudo.
+                </p>
+              </div>
+            </article>
+            <article class="timeline-item" role="listitem">
+              <div class="timeline-dot"><span class="dot-number">08</span></div>
+              <div class="timeline-card">
+                <span class="card-tag">Visual</span>
+                <h3>Primeira Aula de CSS</h3>
+                <p>
+                  Entendi a cascata, especificidade de seletores e o Box Model.
+                  Cores, fontes, espaçamentos — pela primeira vez uma página
+                  saiu do HTML puro e ganhou personalidade visual. Percebi que
+                  CSS é uma linguagem de design tanto quanto de código.
+                </p>
+              </div>
+            </article>
+            <article class="timeline-item" role="listitem">
+              <div class="timeline-dot"><span class="dot-number">09</span></div>
+              <div class="timeline-card">
+                <span class="card-tag">Versionamento</span>
+                <h3>Git e GitHub</h3>
+                <p>
+                  Aprendi os comandos essenciais: <code>git init</code>,
+                  <code>add</code>, <code>commit</code>, <code>push</code> e
+                  <code>pull</code>. Entendi o conceito de branches e merges.
+                  Publicar meu primeiro repositório no GitHub foi como lançar
+                  meu cartão de visitas para o mundo.
+                </p>
+              </div>
+            </article>
+            <article class="timeline-item" role="listitem">
+              <div class="timeline-dot"><span class="dot-number">10</span></div>
+              <div class="timeline-card">
+                <span class="card-tag">Equipe</span>
+                <h3>Primeiro Projeto em Equipe</h3>
+                <p>
+                  Trabalhar com mais pessoas no mesmo repositório trouxe
+                  desafios reais: conflitos de merge, pull requests e code
+                  review. Aprendi que colaborar em código exige tanto
+                  comunicação quanto habilidade técnica — e que o GitHub é o
+                  palco disso tudo.
+                </p>
+              </div>
+            </article>
+            <article class="timeline-item" role="listitem">
+              <div class="timeline-dot"><span class="dot-number">11</span></div>
+              <div class="timeline-card">
+                <span class="card-tag">Animação</span>
+                <h3>Aula de Keyframes</h3>
+                <p>
+                  Com <code>@keyframes</code> passei a criar animações com
+                  múltiplos estados — <code>from/to</code> e percentuais
+                  intermediários. Fade-in, slide, pulse, bounce: tudo sem
+                  JavaScript. Foi a aula que transformou páginas estáticas em
+                  experiências vivas.
+                </p>
+              </div>
+            </article>
+            <article class="timeline-item" role="listitem">
+              <div class="timeline-dot"><span class="dot-number">12</span></div>
+              <div class="timeline-card card-final">
+                <span class="card-tag tag-final">Projeto</span>
+                <h3>Media Queries e Projeto Final</h3>
+                <p>
+                  A aula que fecha o ciclo. Aprendi a adaptar layouts com
+                  <code>@media</code> para desktop, tablet e mobile. O resultado
+                  é esta página — responsiva, animada, versionada no GitHub e
+                  representando tudo que conquistei no primeiro semestre.
+                </p>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
 
@@ -385,7 +468,6 @@
         </div>
         <div class="evolucao-grid">
           <article class="evolucao-card card-antes">
- 
             <h3>Meu início no curso</h3>
             <div class="evo-content">
               <p>
@@ -393,8 +475,8 @@
                 havia feito alguns projetos escolares que envolviam html e css,
                 mas mesmo com essas experiencias o conhecimento era raso, e
                 sentia muita dificuldade de enteder alguns conceitos sobre
-                programação.<br> <br> Mas estudando no senai consegui moldar muito melhor
-                meus conceitos da programação. </p>
+                programação.<br /><br />Mas estudando no senai consegui moldar
+                muito melhor meus conceitos da programação.
               </p>
               <ul class="evo-list">
                 <li>Pouco contato com sistemas</li>
@@ -418,11 +500,11 @@
                 <code>@keyframes</code>, variáveis CSS e interfaces responsivas.
               </p>
               <ul class="evo-list">
-                <li> HTML semântico com boas práticas de acessibilidade</li>
-                <li> CSS avançado: Flexbox, Grid, animações, variáveis</li>
-                <li> Layouts responsivos com Media Queries</li>
-                <li> Git e GitHub Pages para versionamento e deploy</li>
-                <li> Projeto integrador completo publicado online</li>
+                <li>HTML semântico com boas práticas de acessibilidade</li>
+                <li>CSS avançado: Flexbox, Grid, animações, variáveis</li>
+                <li>Layouts responsivos com Media Queries</li>
+                <li>Git e GitHub Pages para versionamento e deploy</li>
+                <li>Projeto integrador completo publicado online</li>
               </ul>
             </div>
           </article>
@@ -435,12 +517,15 @@
                 eventos, funções, APIs e assincronismo.
               </p>
               <p>
-               Espero também estudar Python para garantir uma base sólida em lógica de programação, além de que Python é uma linguagem versátil e muito requisitada no mercado, o que pode abrir portas para diversas oportunidades. A longo prazo, essa base em Python pode facilitar a transição para outras linguagens e áreas, como desenvolvimento web, ciência de dados ou automação, ampliando ainda mais minhas possibilidades de carreira.
+                Espero também estudar Python para garantir uma base sólida em
+                lógica de programação, além de que Python é uma linguagem
+                versátil e muito requisitada no mercado, o que pode abrir portas
+                para diversas oportunidades.
               </p>
               <ul class="evo-list">
-                <li> Aprender JavaScript e lógica de programação</li>
-                <li> Estudar Python e Moldar uma base sólida</li>
-                <li> Construir um portfólio com projetos reais</li>
+                <li>Aprender JavaScript e lógica de programação</li>
+                <li>Estudar Python e Moldar uma base sólida</li>
+                <li>Construir um portfólio com projetos reais</li>
               </ul>
             </div>
           </article>
